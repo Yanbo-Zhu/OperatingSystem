@@ -1,4 +1,8 @@
 
+什么是Shell
+Die Shell ist die primäre textbasierte Benutzerschnittstelle von Unix-Systemen. Über sie kann das System auch ohne grafische Oberfläche effizient bedient und administriert werden.
+
+
 Eine Shell kann eingegebene Kommandos auf zwei Arten erhalten:
 - direkt vom Benutzer über ein textbasiertes Terminal (**interaktive Shell**)
 - aus einer Programmdatei mit einer Folge von Shell-Befehlen, einem sog. **Shell Script**.

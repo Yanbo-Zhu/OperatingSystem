@@ -4,20 +4,21 @@ https://swcarpentry.github.io/shell-novice/index.html
 
 `$` 代表 prompt 
 
-|                     |                                                                                |
-| ------------------- | ------------------------------------------------------------------------------ |
-| `exit`              | Shell beenden                                                                  |
-| Ctrl+c              | Laufenden Befehl vorzeitig beenden                                             |
-| Ctrl+d              | _end of file_: Ende der aktuellen Eingabedatei kennzeichnen bzw. Shell beenden |
-| Ctrl+s              | Terminal-Ausgabe temporär anhalten  这个记住                                       |
-| Ctrl+q              | Angehaltene Terminal-Ausgabe fortsetzen 这个记住                                   |
-| `clear` oder Ctrl+l | Bildschirminhalt löschen                                                       |
-| ← und →             | Cursor zum Editieren in der aktuellen Befehlszeile bewegen                     |
-| ↑ und ↓             | Blättern in der Befehlshistorie                                                |
-| `history`           | Kommandohistorie als nummerierte Liste anzeigen                                |
-| `!42`               | Kommando Nummer 42 aus der history-Liste wiederholen                           |
-| `!ca`               | Letztes Kommando, das mit `ca` beginnt, wiederholen                            |
-| `reset`             | Terminal zurücksetzen, wenn die Ausgabe unleserlich ist                        |
+|                     |                                                                                                                                                                                                         |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `exit`              | Shell beenden                                                                                                                                                                                           |
+| Ctrl+c              | Laufenden Befehl vorzeitig beenden<br>Ein im Vordergrund laufendes Programm abbrechen                                                                                                                   |
+| Ctrl+d              | _end of file_: Ende der aktuellen Eingabedatei kennzeichnen bzw. Shell beenden<br><br>**Shell beenden:** `Ctrl+D` (sendet das EOF-Signal, das die Shell beendet, wenn keine Eingabe mehr erwartet wird) |
+| `Ctrl+Z`            | **Ein im Vordergrund laufendes Programm temporär stoppen:** `Ctrl+Z` (sendet das SIGTSTP-Signal, um das Programm anzuhalten und in den Hintergrund zu verschieben)                                      |
+| Ctrl+s              | Terminal-Ausgabe temporär anhalten  这个记住                                                                                                                                                                |
+| Ctrl+q              | Angehaltene Terminal-Ausgabe fortsetzen 这个记住                                                                                                                                                            |
+| `clear` oder Ctrl+L | Bildschirminhalt löschen                                                                                                                                                                                |
+| ← und →             | Cursor zum Editieren in der aktuellen Befehlszeile bewegen                                                                                                                                              |
+| ↑ und ↓             | Blättern in der Befehlshistorie                                                                                                                                                                         |
+| `history`           | Kommandohistorie als nummerierte Liste anzeigen                                                                                                                                                         |
+| `!42`               | Kommando Nummer 42 aus der history-Liste wiederholen                                                                                                                                                    |
+| `!ca`               | Letztes Kommando, das mit `ca` beginnt, wiederholen  这个记住                                                                                                                                               |
+| `reset`             | Terminal zurücksetzen, wenn die Ausgabe unleserlich ist                                                                                                                                                 |
 
 # 1 缺省值 
 
@@ -128,12 +129,12 @@ grep "of" haiku.txt
 grep "searching" $(find . -name "*.txt")
 `$([command])` inserts a command’s output in place.
 
-|     |                                                                                                                                |
-| --- | ------------------------------------------------------------------------------------------------------------------------------ |
-| -w  | word boundaries<br><br>grep -w The haiku.txt<br>                                                                               |
-| -n  | grep -n "it" haiku.txt<br><br>```<br>5:With searching comes loss<br>9:Yesterday it worked<br>10:Today it is not working<br>``` |
-| -v  | invert our search                                                                                                              |
-| -E  | Regular expressions<br><br>grep -E "^.o" haiku.txt                                                                             |
+|     |                                                                                                                          |
+| --- | ------------------------------------------------------------------------------------------------------------------------ |
+| -w  | word boundaries<br><br>grep -w The haiku.txt<br>**-w 或 --word-regexp** : 只显示全字符合的列。<br>                                  |
+| -n  | grep -n "it" haiku.txt<br><br><br>5:With searching comes loss<br>9:Yesterday it worked<br>10:Today it is not working<br> |
+| -v  | invert our search                                                                                                        |
+| -E  | Regular expressions<br><br>grep -E "^.o" haiku.txt                                                                       |
 
 
 ## 6.2 find 
