@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg7784" width="144.72mm" height="90.363mm" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata id="metadata7788">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs7174">
+  <linearGradient id="linearGradient323412" x1="201.78" x2="201.53" y1="173.46" y2="202.73" gradientTransform="translate(20.49 7.2718)" gradientUnits="userSpaceOnUse">
+   <stop id="stop323406" stop-color="#f6d607" offset="0"/>
+   <stop id="stop323408" stop-color="#ff2a2a" offset="1"/>
+  </linearGradient>
+  <style id="style388"><![CDATA[
+.syscomp-text {
+  fill-opacity:1;
+  font-family:'Liberation Sans',Arial,sans-serif;
+  font-style:normal;
+  letter-spacing:0px;
+  stroke:none;
+  word-spacing:0px;
+}
+]]></style>
+ </defs>
+ <path id="path303778" d="m8.187 195.57 536.08-0.2389" fill="#800000" stroke="#a00" stroke-dasharray="4.8, 1.2" stroke-width="1.2"/>
+ <rect id="rect4993-3" x="20.355" y="213.24" width="448.2" height="69.421" fill="#f55" stroke="#000" stroke-linejoin="bevel" stroke-width="1.4354" style="paint-order:fill markers stroke"/>
+ <text id="text4672-1" class="syscomp-text" x="209.47585" y="258.0733" fill="#000000" font-size="18.667px" font-weight="bold" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:125%" xml:space="preserve"><tspan id="tspan4670-4" x="209.47585" y="258.0733" font-size="18.667px" font-weight="bold" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Kernel<tspan id="tspan4668-8" fill="#000000" font-size="18.667px" font-weight="bold" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal"/></tspan></text>
+ <rect id="rect4993-3-6" x="20.622" y="285.65" width="448.35" height="55.244" fill="#ccc" stroke="#000" stroke-linejoin="bevel" stroke-width="1.2806" style="paint-order:fill markers stroke"/>
+ <text id="text4672-1-7" class="syscomp-text" x="194.45534" y="319.5322" fill="#000000" font-size="18.667px" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:125%" xml:space="preserve"><tspan id="tspan113" x="194.45534" y="319.5322" font-size="18.667px" font-style="italic" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Hardware</tspan></text>
+ <text id="text91192" class="syscomp-text" transform="translate(18.49 3.2718)" fill="#000000" font-size="40px" style="line-height:1.25;shape-inside:url(#rect91194);white-space:pre" xml:space="preserve"/>
+ <text id="text94820" class="syscomp-text" transform="translate(18.49 3.2718)" fill="#000000" font-size="40px" style="line-height:1.25;shape-inside:url(#rect94822);white-space:pre" xml:space="preserve"/>
+ <text id="text100280" class="syscomp-text" transform="translate(18.49 3.2718)" fill="#000000" font-size="40px" style="line-height:1.25;shape-inside:url(#rect100282);white-space:pre" xml:space="preserve"/>
+ <text id="text152076" class="syscomp-text" transform="translate(20.49 7.2718)" fill="#000000" font-size="40px" style="line-height:1.25;shape-inside:url(#rect152078);white-space:pre" xml:space="preserve"/>
+ <rect id="rect4993-30" x="21.063" y="133.74" width="350.33" height="41.515" fill="#ffdb2d" stroke="#000" stroke-linejoin="bevel" stroke-width=".98134" style="paint-order:fill markers stroke"/>
+ <text id="text4672-9" class="syscomp-text" x="106.43601" y="161.12154" fill="#000000" font-size="18.667px" font-weight="bold" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:125%" xml:space="preserve"><tspan id="tspan9656" x="106.43601" y="161.12154">Systembibliotheken</tspan></text>
+ <rect id="rect4993-30-9-2" x="20.935" y="76.42" width="73.219" height="53.602" fill="#aaffe2" stroke="#000" stroke-linejoin="bevel" stroke-width=".50978" style="paint-order:fill markers stroke"/>
+ <text id="text4672-9-8-3-1" class="syscomp-text" x="37.269585" y="110.34871" fill="#000000" font-size="18.667px" font-weight="bold" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:125%" xml:space="preserve"><tspan id="tspan9656-3-2-0" x="37.269585" y="110.34871">Shell</tspan></text>
+ <rect id="rect4993-30-9-2-6" x="102.87" y="76.481" width="115.07" height="53.192" fill="#cfffaa" stroke="#000" stroke-linejoin="bevel" stroke-width=".63662" style="paint-order:fill markers stroke"/>
+ <text id="text4672-9-8-3-1-1" class="syscomp-text" x="119.00677" y="97.762566" fill="#000000" font-size="18.667px" font-weight="bold" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:125%" xml:space="preserve"><tspan id="tspan9656-3-2-0-5" x="119.00677" y="97.762566">Standard-</tspan></text>
+ <text id="text4672-9-8-3-1-1-9" class="syscomp-text" x="128.89159" y="117.35729" fill="#000000" font-size="18.667px" font-weight="bold" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:125%" xml:space="preserve"><tspan id="tspan9656-3-2-0-5-4" x="128.89159" y="117.35729">Utilities</tspan></text>
+ <rect id="rect106971" x="151.88" y="103.06" width="8.4013" height="14.595" fill="none"/>
+ <rect id="rect4993-30-9-2-6-9" x="223.55" y="76.12" width="122.99" height="52.823" fill="#fffdaa" stroke="#000" stroke-linejoin="bevel" stroke-width=".65589" style="paint-order:fill markers stroke"/>
+ <text id="text4672-9-8-3-1-1-0" class="syscomp-text" x="253.80212" y="97.29303" fill="#000000" font-size="18.667px" font-weight="bold" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:125%" xml:space="preserve"><tspan id="tspan9656-3-2-0-5-9" x="253.80212" y="97.29303">weitere</tspan></text>
+ <text id="text4672-9-8-3-1-1-9-1" class="syscomp-text" x="229.90857" y="119.21599" fill="#000000" font-size="18.667px" font-weight="bold" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:125%" xml:space="preserve"><tspan id="tspan9656-3-2-0-5-4-7" x="229.90857" y="119.21599">Bibliotheken</tspan></text>
+ <rect id="rect106971-7" x="280.49" y="102.33" width="8.4013" height="14.595" fill="none"/>
+ <rect id="rect107458" width=".35088" height="1.4035" fill="none"/>
+ <path id="path302510" d="m20.803 6.9864 447.68 0.73348-0.11136 167.86-94.074 5e-3 -0.21368-46.463-24.067 0.0641-0.30088-59.499-328.53 0.51159z" fill="#aef" stroke="#000" stroke-width="1px"/>
+ <text id="text4672-1-5" class="syscomp-text" transform="scale(1.0254 .97524)" x="154.05379" y="45.013634" fill="#000000" font-size="23.408px" stroke-width=".48384" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:125%" xml:space="preserve"><tspan id="tspan4670-4-4" x="154.05379" y="45.013634" font-size="18.667px" font-weight="bold" stroke-width=".48384" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Anwendungsprogramme</tspan></text>
+ <rect id="rect4993" x="20.277" y="180.27" width="448.35" height="29.824" fill="url(#linearGradient323412)" stroke="#000" stroke-linejoin="bevel" stroke-width=".94097" style="mix-blend-mode:normal;paint-order:fill markers stroke"/>
+ <text id="text4672" class="syscomp-text" x="145.41801" y="201.43764" fill="#000000" font-size="18.667px" font-weight="bold" stroke-width=".49608" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:125%" xml:space="preserve"><tspan id="tspan9634" x="145.41801" y="201.43764">System Call lnterface</tspan></text>
+ <text id="text343688" class="syscomp-text" x="473.60907" y="93.363106" fill="#003380" font-size="24px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan343686" x="473.60907" y="93.363106">user</tspan><tspan id="tspan362825" x="473.60907" y="123.36311">mode</tspan></text>
+ <text id="text343688-9" class="syscomp-text" x="473.34" y="233.33119" fill="#d40000" font-size="24px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan343686-7" x="473.34" y="233.33119">kernel</tspan><tspan id="tspan362825-7" x="473.34" y="263.33118">mode</tspan></text>
+</svg>
