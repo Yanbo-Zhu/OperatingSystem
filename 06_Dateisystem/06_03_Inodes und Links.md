@@ -20,6 +20,8 @@ Sie können mit dem System Call `stat()` und dem Shell-Kommando `stat` abgefragt
 
 # 2 Verzeichniseinträge, Links
 
+> Das geliche Datei auf meheren Verschnisse speichern
+
 Verzeichniseintrag 就是 link, 关联 Dateinamen mit einer inode-Nummer
 Ein Verzeichniseintrag verknüpft einen Dateinamen mit einer inode-Nummer im selben Dateisystem, zeigt also auf eine dort gespeicherte Datei. Diesen Eintrag nennt man auch einen Link zu dieser Datei.
 
@@ -84,3 +86,81 @@ Symbolische Links werden _zur Laufzeit_ aufgelöst: wenn ein Pfad geöffnet werd
 
 ln -s 产生 软链接 
 Ein Symlink wird mit dem Befehl `ln -s` oder dem System Call `symlink()` erzeugt. Dabei wird nicht geprüft, ob das _target_ existiert. Im Output von `ls -l` sind Symlinks am Dateityp `l` erkennbar.
+
+# 5 `ls -il`
+
+- Zeigt ebenfalls eine lange Listenansicht, enthält aber zusätzlich die **Inode-Nummer** jeder Datei.
+- Die Inode-Nummer ist eine eindeutige Kennung, die das Dateisystem jeder Datei und jedem Verzeichnis zuweist.
+
+```
+1234567 -rw-r--r-- 1 user group 1024 Nov  9 12:00 example.txt
+```
+# 6 Unterschied zw symbolischen links und hard links erklären?
+
+
+1 创造硬链接
+![](images/Pasted%20image%2020241111201327.png)
+
+
+
+![](images/Pasted%20image%2020241111201341.png)
+
+2097160 数字是一样的 
+2  是 关联这个文件的硬链接的数量 
+
+---
+
+ln -s 创造软连接 
+
+![](images/Pasted%20image%2020241111201517.png)
+
+最后一个是 symbolische Link 
+
+![](images/Pasted%20image%2020241111201535.png)
+
+
+---
+
+insgesamt 8  是什么意思 
+
+8 =   diese Dateien, wie viel Speicherplatz verbrauchen 
+
+Anzahl von benotige Blöcke der Bedarf    =    20 byte  groß ist dann verbraucht die 4 KB 
+
+![](images/Pasted%20image%2020241111201809.png)
+
+
+# 7 源文件删除后, 之前创造的链接还能用吗 
+
+![](images/Pasted%20image%2020241111202153.png)
+
+
+hello4 是 hello2 的软连接 , 通过 ln hello2 hello4 产生
+hello3 是 hello2 的硬链接   通过 ln -s hello2 hello3 产生
+
+删除 hello2 后 
+hello3 仍存在, 可以打开 可以使用 
+
+hello4 仍存在, 但是无法使用了
+also wenn man hello4 öffnen, will hello4  einen  fehler werfen, (broken symlink) . Symlinks werfen eben keine Fehler, wenn das Storage-Backend weg ist.
+man kann usern oder prozessen vorgaukeln, auf eine Datei zuzugreifen, wenn man z.B. eine Config-Datei durch einen Softlink ersetzt 😁
+![](images/Pasted%20image%2020241111202359.png)
+
+
+
+
+
+
+
+# 8 有些文件不能生成 hart link 
+
+1
+![](images/Pasted%20image%2020241111202741.png)
+
+
+2 
+Können Hard-Links auf Verzeichnisse zeigen?
+hard linke not allowed for directory 
+directory 不能创造硬链接 
+
+![](images/Pasted%20image%2020241111203347.png)

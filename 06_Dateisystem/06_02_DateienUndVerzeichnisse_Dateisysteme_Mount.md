@@ -76,6 +76,14 @@ hängt das auf der Partition `/dev/sda1` befindliche ext4-Dateisystem unter `/mn
 查看所有 system 中的 mounts 
 Die Kommandos `mount` (ohne Argumente) oder `findmnt` geben eine Übersicht aller aktuellen _mounts_ im System aus.
 
+
+显示所有的 mount 的 device 
+
+![](images/Pasted%20image%2020241111202446.png)
+
+
+
+
 ## 3.2 Unmont 
 
 Mit `umount()` bzw. `umount` (_unmount_) kann ein Dateisystem wieder ausgehängt werden. Auch dieses Kommando erfordert root-Rechte.
