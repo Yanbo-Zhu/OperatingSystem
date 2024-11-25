@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg5" width="78.28mm" height="98.502mm" version="1.1" viewBox="0 0 78.28 98.502" xmlns="http://www.w3.org/2000/svg">
+ <defs id="defs2">
+  <marker id="TriangleStart_F-165016_S-165016" overflow="visible" markerHeight="4.1550002" markerWidth="3.594075" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 5.3244081 6.1553851">
+   <path id="path305" transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="#165016" fill-rule="evenodd" stroke="#165016" stroke-width="1pt"/>
+  </marker>
+  <marker id="TriangleStart_F-0044aa_S-0044aa" overflow="visible" markerHeight="4.1550002" markerWidth="3.594075" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 5.3244081 6.1553851">
+   <path id="path302" transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="#04a" fill-rule="evenodd" stroke="#04a" stroke-width="1pt"/>
+  </marker>
+  <style id="style319"><![CDATA[
+.address-space-text {
+  font-family:'Liberation Sans',Arial,sans-serif;
+  font-size:4.58611px;
+  font-stretch:normal;
+  font-style:normal;
+  font-variant:normal;
+  font-variant-caps:normal;
+  font-variant-east-asian:normal;
+  font-variant-ligatures:normal;
+  font-variant-numeric:normal;
+  font-weight:normal;
+  letter-spacing:0px;
+  stroke-width:0.264583;
+  word-spacing:0px;
+}
+.address-space-code {
+  font-family:'DejaVu Sans Mono',monospace;
+  font-size:3.52778px;
+  letter-spacing:0px;
+  line-height:1.25;
+  stroke-width:0.264583;
+  word-spacing:0px;
+}
+]]></style>
+ </defs>
+ <g id="layer1" transform="translate(-2.3064 -.94974)">
+  <rect id="rect819" x="2.571" y="2.5484" width="46.831" height="96.639" fill="none" stroke="#000080" stroke-dasharray="0.529167, 0.529167" stroke-linejoin="round" stroke-width=".52917"/>
+  <rect id="rect61" x="2.571" y="84.452" width="46.831" height="14.736" fill="#e6e6e6" stroke="#000080" stroke-linejoin="round" stroke-width=".52917"/>
+  <rect id="rect61-1" x="2.571" y="78.318" width="46.831" height="6.1339" fill="#e6e6e6" stroke="#000080" stroke-linejoin="round" stroke-width=".52917"/>
+  <text id="text119" class="address-space-text" x="25.986603" y="90.719429" text-align="center" text-anchor="middle" style="line-height:1.05" xml:space="preserve"><tspan id="tspan117" x="25.986603" y="90.719429" text-align="center">text</tspan><tspan id="tspan1563" x="25.986603" y="95.534843" text-align="center">(code)</tspan></text>
+  <text id="text119-4" class="address-space-text" x="9.7886305" y="83.225807" style="line-height:1.25" xml:space="preserve"><tspan id="tspan534" x="9.7886305" y="83.225807">initialized data</tspan></text>
+  <rect id="rect61-1-7" x="2.571" y="72.637" width="46.831" height="6.1339" fill="#e6e6e6" stroke="#000080" stroke-linejoin="round" stroke-width=".52917"/>
+  <rect id="rect61-1-7-5" x="2.571" y="63.247" width="46.831" height="9.39" fill="#acf" stroke="#000080" stroke-linejoin="round" stroke-width=".52917"/>
+  <text id="text119-4-7" class="address-space-text" x="5.9256363" y="77.31868" style="line-height:1.25" xml:space="preserve"><tspan id="tspan534-1" x="5.9256363" y="77.31868">uninitialized data</tspan></text>
+  <text id="text119-4-1-9" class="address-space-text" x="20.178949" y="69.164742" style="line-height:1.25" xml:space="preserve"><tspan id="tspan117-3-4-2" x="20.178949" y="69.164742">heap</tspan></text>
+  <rect id="rect61-1-7-5-9" x="2.571" y="19.498" width="46.831" height="9.8852" fill="#afa" stroke="#000080" stroke-linejoin="round" stroke-width=".52917"/>
+  <rect id="rect61-1-7-5-9-65" x="2.571" y="2.5484" width="46.831" height="16.95" fill="#faa" stroke="#000080" stroke-linejoin="round" stroke-width=".52917"/>
+  <text id="text119-4-1-9-6" class="address-space-text" x="52.521614" y="64.345192" xml:space="preserve"><tspan id="tspan117-3-4-2-4" x="52.521614" y="64.345192" font-size="3.5278px">program break</tspan></text>
+  <text id="text119-4-1-9-6-6" class="address-space-code" x="52.612907" y="99.40184" xml:space="preserve"><tspan id="tspan117-3-4-2-4-3" x="52.612907" y="99.40184">0x00000000</tspan></text>
+  <text id="text119-4-1-9-6-6-1" class="address-space-code" x="52.612907" y="19.183435" fill="#800000" xml:space="preserve"><tspan id="tspan117-3-4-2-4-3-7" x="52.612907" y="19.183435">0x80000000</tspan></text>
+  <text id="text119-4-1-9-6-6-6" class="address-space-code" x="52.612907" y="3.5680175" fill="#800000" xml:space="preserve"><tspan id="tspan117-3-4-2-4-3-3" x="52.612907" y="3.5680175">0xFFFFFFFF</tspan></text>
+  <text id="text119-4-1-9-0-2" class="address-space-text" x="19.493719" y="26.030741" style="line-height:1.25" xml:space="preserve"><tspan id="tspan117-3-4-2-6-6" x="19.493719" y="26.030741">stack</tspan></text>
+  <rect id="rect61-1-7-5-9-6" x="2.571" y="37.15" width="46.831" height="12.058" fill="#ffe680" stroke="#000080" stroke-linejoin="round" stroke-width=".52917"/>
+  <text id="text119-4-1-9-0-2-7" class="address-space-text" x="18.575602" y="44.515659" style="line-height:1.25" xml:space="preserve"><tspan id="tspan117-3-4-2-6-6-3" x="18.575602" y="44.515659">mmap</tspan></text>
+  <text id="text119-4-1-9-0-8" class="address-space-text" x="8.5714769" y="12.288418" style="line-height:1.25" xml:space="preserve"><tspan id="tspan117-3-4-2-6-9" x="8.5714769" y="12.288418">kernel memory</tspan></text>
+  <path id="path2269" d="m26.006 63.425-0.02206-6.0149" fill="#04a" marker-end="url(#TriangleStart_F-0044aa_S-0044aa)" stroke="#04a" stroke-width=".665"/>
+  <path id="path3598" d="m26.003 29.61-0.02206 2.5252" fill="#165016" marker-end="url(#TriangleStart_F-165016_S-165016)" stroke="#165016" stroke-width=".665"/>
+  <path id="path8205" d="m49.208 19.763h24.221" fill="none" stroke="#000" stroke-dasharray="0.26458299,0.79374898" stroke-width=".26458px"/>
+ </g>
+</svg>
