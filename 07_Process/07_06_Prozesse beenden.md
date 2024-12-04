@@ -34,16 +34,26 @@ Der Prozesskontrollblock (PCB) eines beendeten Prozesses wird erst dann aus der 
 
 Bis dahin befindet sich der beendete Prozess in einem "untoten" Zustand, auch **Zombie** genannt. In der Ausgabe von `ps` sind Zombies am Zustand Z erkennbar.
 
-
+1 
 > _reaping_ 回收 
 > eletern process 被结束了, 他的 kinderprocess 成为了 orphanned process, init-Prozess (PID 1) 会领养这个kinderprocess,   init-Prozess (PID 1) 会不断执行 wait() 去去除这个kinderprocess, 
 
 Wenn ein Prozess _vor seinen Kindern_ terminiert, "adoptiert" standardmäßig der init-Prozess (PID 1) diese "Waisenkinder" (_orphaned processes_) und wird deren neuer Elternprozess. Der init-Prozess führt regelmäßig `wait()` aus, um verwaiste Zombies zu entfernen. Diesen Vorgang nennt man _reaping_.
 
+Ein Prozess hat zwei Kinder und terminiert vor diesen. Welche Folge hat dies?
+a. Die Kinder werden sofort zwangsweise beendet.
+b. Die Kinder laufen weiter und werden später vom init-Prozess aufgeräumt; es entstehen keine Zombies.
+c. Es entstehen zwei Zombies, die erst beim Neustart des Systems verschwinden.
+选b 
+
+
+2 
 > System Call `prctl()` 去回收认养所有的orpaned processes 
 In Linux kann sich ein Prozess mit dem Linux-spezifischen System Call `prctl(PR_SET_CHILD_SUBREAPER, 1, 0, 0, 0)` als _subreaper_ registrieren. Dann adoptiert dieser Prozess (und nicht PID 1) alle verwaisten Nachkommen seiner Kinder. Diese Möglichkeit wird z.B. unter Ubuntu zum Management von Login-Sessions mit `systemd` genutzt.
 
 
+
+3
 Zombies sollten normalerweise sehr schnell wieder verschwinden. Über längere Zeit im System existierende Zombies sind ein Hinweis auf fehlerhafte Programmierung, z.B. fehlendes `wait()`.
 
 > Zombies 无法手动 manuell zu entfernen

@@ -214,4 +214,14 @@ Die pthread-Mutexe und -Spinlocks sind primär zur Verwendung in Threads innerha
 Dazu muss das Spinlock- oder Mutex-Objekt aber in einem [_shared memory_](https://moodle.oncampus.de/modules/ir866/onmod/ipc/shm.html)-Segment der beteiligten Prozesse gespeichert sein, damit diese überhaupt gemeinsam darauf zugreifen können.
 
 
+# 5 小题目 
 
+
+- Ein POSIX-spinlock  wird den aufrufenden Prozess nie blockieren.
+    - Ein Spinlock blockiert den aufrufenden Prozess nicht im traditionellen Sinne (durch Schlafen oder Warten auf eine Ressource). Stattdessen wartet der Prozess aktiv (durch "spinnen"), bis der Lock freigegeben wird. Der Prozess bleibt aktiv, solange er auf den Lock wartet, was dazu führt, dass er nicht blockiert, aber Ressourcen verschwendet.
+- Ein Semaphor kann einen systemweit eindeutigen Namen haben.
+    - Semaphoren können systemweit eindeutige Namen haben, insbesondere in Systemen, die benannte Semaphoren unterstützen. Dies ermöglicht die Verwendung von Semaphoren zwischen verschiedenen Prozessen, da die Semaphore in einem globalen Namensraum erkannt werden können.
+- Ein Mutex verhält sich sehr ähnlich wie ein Semaphor mit Startwert 1
+    - Ein Mutex (binäre Sperre) funktioniert wie ein Semaphor mit einem Startwert von 1, da er eine binäre Zustandsverwaltung ermöglicht (gesperrt oder entsperrt). Ein Semaphor mit Startwert 1 ist im Wesentlichen eine binäre Ressource, die genauso funktioniert wie ein Mutex, der nur von einem Thread zur gleichen Zeit verwendet werden kann.
+- Um ein Mutex zwischen verschiedenen Prozessen verwenden zu können, muss es in Shared Memory angelegt werden
+    - Um ein Mutex zwischen verschiedenen Prozessen zu verwenden, muss es in einem Bereich abgelegt werden, der von mehreren Prozessen zugänglich ist, wie z. B. im Shared Memory. Dadurch können verschiedene Prozesse auf den gleichen Mutex zugreifen und ihn zur Synchronisation verwenden. Ein Mutex in Shared Memory ist notwendig, um zwischen Prozessen eine Synchronisation zu gewährleisten, während ein Mutex in einem normalen Thread-basierten Umfeld nur innerhalb eines Prozesses funktioniert.

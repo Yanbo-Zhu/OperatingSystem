@@ -69,3 +69,31 @@ Mit dem System Call `mlock()` kann ein Prozess einen angegebenen Bereich seines 
 Memory Locks können z.B. sinnvoll sein, um eine schnelle Reaktion des Prozesses auf externe Ereignisse zu ermöglichen. Sie werden bei `fork()` nicht vererbt.
 
 
+# 6 小题目
+
+
+a. Eine Swap-Partition hat etwas bessere Performance als eine Swap-Datei.  
+Correct 
+_Erklärung_: Eine Swap-Partition ist in der Regel schneller, weil sie direkt im Dateisystem des Betriebssystems integriert ist und keine zusätzlichen Verwaltungsprozesse erfordert, wie sie bei Swap-Dateien der Fall sind.
+
+
+b. Solange das System läuft, bietet verschlüsselter Swap Space keinen wesentlichen Sicherheitsvorteil.  
+Correct 
+_Erklärung_: Verschlüsselter Swap Space bietet einen klaren Sicherheitsvorteil, weil er unbefugtem 无权 Zugriff auf sensible Daten verhindert, die im Swap gespeichert sind. Auch während das System läuft, sind Daten im Swap Space potenziell gefährdet, wenn der Swap unverschlüsselt ist.
+
+c. Ein Prozess kann nicht verhindern, dass sein Speicher in den Swap Space ausgelagert wird.  
+incorrect 
+_Erklärung_: Das Betriebssystem verwaltet den Swap Space automatisch. Ein Prozess hat keinen direkten Einfluss darauf, ob und wann sein Speicher ausgelagert wird. Es kann jedoch Techniken wie `mlock()` verwenden, um zu verhindern, dass bestimmte Bereiche des Speichers ausgelagert werden.
+
+
+d. Unverschlüsselter Swap Space ist ein Sicherheitsrisiko.  
+Correct 
+_Erklärung_: Unverschlüsselter Swap Space kann sensible Daten enthalten (z. B. Passwörter, private Schlüssel), die im Falle eines unbefugten Zugriffs auf den Swap Space ausgelesen werden können. Verschlüsselung schützt diese Daten.
+
+
+
+e. Auf Systemen, die immer freien RAM haben, ist Swap Space nutzlos.
+incorrect
+_Erklärung_: Auch wenn das System genügend RAM hat, ist Swap Space nützlich, um den Speicherbedarf zu verwalten und das System bei speicherintensiven Aufgaben stabil zu halten, falls der RAM voll ist. Swap Space fungiert als eine Art "Überlaufreservoir".
+
+

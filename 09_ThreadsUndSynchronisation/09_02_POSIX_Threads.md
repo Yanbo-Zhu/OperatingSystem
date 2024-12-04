@@ -99,6 +99,27 @@ Gewöhnungsbedürftig ist die Verwendung von `void`-Pointern als Argument und R�
 
 Kurze Daten (bis zur Länge eines Pointers, auf 64-Bit-Architekturen typischerweise 64 Bit) können auch durch einen direkten _type cast_ übergeben werden, ohne tatsächlich einen Zeiger zu nutzen. Dies haben wir im Beispiel mit einem `char`-Argument gemacht, das als void-Pointer "getarnt" 伪装 übergeben wird.
 
+# 4 小题目
 
+
+POSIX Threads: Eigenschaften  
+POSIX Threads innerhalb eines Prozesses teilen sich  (share 某些东西)
+
+- **b. den Heap**
+    - _Erklärung_: Alle Threads eines Prozesses teilen sich den gleichen Heap-Speicher, was bedeutet, dass sie auf denselben dynamisch zugewiesenen Speicher zugreifen können.
+- **c. die globalen Variablen**
+    - _Erklärung_: Alle Threads eines Prozesses haben Zugriff auf die globalen Variablen dieses Prozesses, da sie sich denselben Adressraum teilen.
+- **e. offene File Descriptors**
+    - _Erklärung_: Alle Threads eines Prozesses teilen sich die offenen File Descriptors, da diese ebenfalls im gemeinsamen Adressraum des Prozesses liegen.
+
+Die anderen Aussagen sind nicht korrekt:
+- **a. den Stack**
+    - _Erklärung_: Jeder Thread hat einen eigenen Stack. Der Stack ist für den jeweils laufenden Thread privat und wird nicht mit anderen Threads geteilt.
+- **d. eine CPU**
+    - _Erklärung_: Threads teilen sich nicht zwangsläufig eine CPU. Das Betriebssystem kann Threads auf verschiedenen CPUs oder Prozessoren ausführen, wenn mehrere CPUs verfügbar sind.
+- **f. eine PID**
+    - _Erklärung_: Jeder Prozess hat eine eigene PID (Prozess-ID). Alle Threads innerhalb eines Prozesses teilen sich jedoch die gleiche PID, aber jeder Thread hat eine eigene Thread-ID (TID).
+- **g. eine Thread-ID**
+    - _Erklärung_: Jeder POSIX-Thread hat eine eigene Thread-ID (TID), die es von anderen Threads unterscheidet. Sie wird nicht zwischen Threads geteilt.
 
 

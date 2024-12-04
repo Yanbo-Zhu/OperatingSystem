@@ -25,6 +25,7 @@ Beide Prozesse setzen die Ausführung im Code direkt nach dem `fork()`-Aufruf fo
 Durch Fallunterscheidung nach dem Rückgabewert kann erreichen, dass sich Eltern- und Kindprozess unterschiedlich verhalten — was normalerweise gewünscht ist, wie in diesem Beispiel:
 
 
+
 ```c
 #include <sys/types.h> // for pid_t
 #include <stdio.h>     // for printf(), perror()

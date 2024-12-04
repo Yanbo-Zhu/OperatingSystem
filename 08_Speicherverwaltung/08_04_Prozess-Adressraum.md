@@ -103,6 +103,21 @@ Typische Fehlerkategorien sind:
     
 - _Memory leaks_: in einem langlebigen Prozess wird immer wieder Speicher allokiert, aber nicht mehr vollständig freigegeben. Über die Zeit wächst der Heap immer weiter an und belegt unnötig Speicher.
 
+
+## 2.4 小题目
+
+- **Anwendungen können Speicher zur Laufzeit dynamisch auf dem** _Heap_ **allokieren.**
+    - **Erklärung**: Der _Heap_ ist der Bereich im Speicher, in dem dynamisch Speicher zur Laufzeit angefordert wird (z.B. mit `malloc()`).
+- **Mit malloc() kann die Anwendung einen Speicherbereich anfordern, der** beliebug **groß ist und** nicht _initialisiert_ **wird.**
+    - **Erklärung**: Mit `malloc()` wird dynamisch ein Speicherbereich allokiert, dessen Größe zur Laufzeit bestimmt werden kann. Der zugewiesene Speicher ist uninitialisiert.
+- **Die Funktionen malloc() und free() werden im** _Benutzermodus_ **ausgeführt.**
+    - **Erklärung**: `malloc()` und `free()` sind Funktionen, die im Benutzermodus (User Mode) ausgeführt werden, da sie vom Benutzerprogramm aufgerufen werden und nicht direkt vom Betriebssystem verwaltet werden.
+- **Der Heap wird** _vom Betriebssystem und der Systembibliothek_ **verwaltet.**
+    - **Erklärung**: Der _Heap_ wird vom Betriebssystem und der Systembibliothek verwaltet. Es kümmert sich um das Allokieren und Freigeben von Speicher während der Laufzeit der Anwendung.
+- **Zur Laufzeit wird** _nicht_ **geprüft, ob die Grenzen eines dynamisch allokierten Speicherobjekts eingehalten werden.**
+    - **Erklärung**: In C zum Beispiel wird die Grenze eines dynamisch allokierten Speicherbereichs nicht automatisch überprüft. Dies liegt in der Verantwortung des Programmierers. Wenn das Programm den Speicherbereich überschreitet, kann es zu einem Speicherüberlauf (Buffer Overflow) kommen, was in der Regel zu undefiniertem Verhalten führt.
+
+
 # 3 Memory Mapping
 
 > 将文件内容映射到 virtuellen Speicher eines Prozesses
@@ -158,6 +173,24 @@ Der compilierte Programmcode solcher Bibliotheken ist in _shared object_-Dateien
 
 Weil _shared object_-Dateien read-only sind, muss nur eine Kopie davon im physischen Speicher existieren, die in alle betreffenden Prozesse abgebildet wird. Dadurch ist dieser Mechanismus sehr speichereffizient.
 
+## 3.3 小题目 
+
+Welche Aussagen zu Memory Mapping treffen zu?
+
+a. Zum Memory Mapping ist eine Datei erforderlich.
+Falsch. Memory Mapping bezieht sich nicht zwingend auf eine Datei. Es kann auch auf andere Speicherbereiche angewendet werden, wie z.B. anonymen Speicher, der nicht an eine Datei gebunden ist.
+
+b. Änderungen im abgebildeten Speicher werden immer in die darunterliegende Datei zurückgeschrieben.
+**Falsch**. Änderungen im abgebildeten Speicher werden nicht immer zurück in die Datei geschrieben. Das Verhalten hängt von den verwendeten Flags beim `mmap()`-Aufruf ab. Wenn beispielsweise `MAP_SHARED` verwendet wird, können Änderungen in die Datei zurückgeschrieben werden. Bei `MAP_PRIVATE` bleiben die Änderungen jedoch nur im Speicher und werden nicht in die Datei übernommen.
+
+c. Eine Datei kann gleichzeitig in den Speicher mehrerer Prozesse abgebildet sein.
+**Richtig**. Es ist möglich, dass mehrere Prozesse dieselbe Datei in ihren Speicher abbilden. Dies wird häufig bei Shared Memory oder bei der Verwendung von `mmap()` mit bestimmten Flags wie `MAP_SHARED` gemacht.
 
 
+d. mmap() gibt bei Erfolg einen Pointer auf den abgebildeten Speicherbereich zurück.
+**Richtig**. Die Funktion `mmap()` gibt einen Zeiger (Pointer) auf den abgebildeten Speicherbereich zurück, der anschließend im Programm verwendet werden kann.
+
+
+e. Ändert sich die Größe einer Datei, so werden bestehende Memory Mappings automatisch angepasst.
+**Falsch**. Wenn die Größe einer Datei geändert wird, ändert sich der abgebildete Speicherbereich nicht automatisch. Der Entwickler muss sicherstellen, dass der abgebildete Speicherbereich entsprechend angepasst wird, wenn sich die Dateigröße ändert.
 
