@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg7784" width="141.02mm" height="101.81mm" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata id="metadata7788">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs7174">
+  <marker id="Arrow2" overflow="visible" markerHeight="5.5999999" markerUnits="userSpaceOnUse" markerWidth="7.6999998" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 7.7 5.6">
+   <path id="arrow2L" transform="scale(.7)" d="m-2-4 11 4-11 4c2-2.33 2-5.66 0-8z" fill="#000080" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Arrow2-0" overflow="visible" markerHeight="5.5999999" markerUnits="userSpaceOnUse" markerWidth="7.6999998" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 7.7 5.6">
+   <path id="arrow2L-3" transform="scale(.7)" d="m-2-4 11 4-11 4c2-2.33 2-5.66 0-8z" fill="#000080" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Arrow2-0-2" overflow="visible" markerHeight="5.5999999" markerUnits="userSpaceOnUse" markerWidth="7.6999998" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 7.7 5.6">
+   <path id="arrow2L-3-4" transform="scale(.7)" d="m-2-4 11 4-11 4c2-2.33 2-5.66 0-8z" fill="#000080" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Arrow2-0-7" overflow="visible" markerHeight="5.5999999" markerUnits="userSpaceOnUse" markerWidth="7.6999998" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 7.7 5.6">
+   <path id="arrow2L-3-5" transform="scale(.7)" d="m-2-4 11 4-11 4c2-2.33 2-5.66 0-8z" fill="#000080" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Arrow2-0-8" overflow="visible" markerHeight="5.5999999" markerUnits="userSpaceOnUse" markerWidth="7.6999998" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 7.7 5.6">
+   <path id="arrow2L-3-1" transform="scale(.7)" d="m-2-4 11 4-11 4c2-2.33 2-5.66 0-8z" fill="#000080" fill-rule="evenodd"/>
+  </marker>
+  <marker id="Arrow2-0-2-8" overflow="visible" markerHeight="5.5999999" markerUnits="userSpaceOnUse" markerWidth="7.6999998" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 7.7 5.6">
+   <path id="arrow2L-3-4-9" transform="scale(.7)" d="m-2-4 11 4-11 4c2-2.33 2-5.66 0-8z" fill="#000080" fill-rule="evenodd"/>
+  </marker>
+  <style id="style444"><![CDATA[
+.syscall-text {
+  font-family:'Liberation Sans',Arial,sans-serif;
+  font-style:normal;
+  letter-spacing:0px;
+  line-height:1.25;
+  word-spacing:0px;
+}
+.syscall-code {
+  font-family:'DejaVu Sans Mono',monospace;
+  font-size:14.6667px;
+  font-stretch:normal;
+  font-variant:normal;
+  font-variant-caps:normal;
+  font-variant-east-asian:normal;
+  font-variant-ligatures:normal;
+  font-variant-numeric:normal;
+  font-weight:normal;
+}
+]]></style>
+ </defs>
+ <g id="g2710" transform="matrix(.96966 0 0 1.2274 .62611 -2.4455)" fill="none" stroke-width=".91662">
+  <rect id="rect4993-3-6-8" x="20.622" y="2.5793" width="448.35" height="198.47" fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="1.1739" style="paint-order:fill markers stroke"/>
+ </g>
+ <path id="path303778" d="m8.1872 243.82 524.8 0.05131" fill="#800000" stroke="#a00" stroke-dasharray="4.80002, 1.2" stroke-width="1.2"/>
+ <rect id="rect4993-3-6" x="20.623" y="244.32" width="434.75" height="139.85" fill="#e6e6e6" stroke="#000" stroke-linejoin="bevel" stroke-width="1.2806" style="paint-order:fill markers stroke"/>
+ <text id="text91192" class="syscall-text" transform="translate(18.49 46.551)" fill="#000000" font-size="40px" style="shape-inside:url(#rect91194);white-space:pre" xml:space="preserve"/>
+ <text id="text94820" class="syscall-text" transform="translate(18.49 46.551)" fill="#000000" font-size="40px" style="shape-inside:url(#rect94822);white-space:pre" xml:space="preserve"/>
+ <text id="text100280" class="syscall-text" transform="translate(18.49 46.551)" fill="#000000" font-size="40px" style="shape-inside:url(#rect100282);white-space:pre" xml:space="preserve"/>
+ <text id="text152076" class="syscall-text" transform="translate(20.49 50.551)" fill="#000000" font-size="40px" style="shape-inside:url(#rect152078);white-space:pre" xml:space="preserve"/>
+ <rect id="rect107458" y="43.279" width=".35088" height="1.4035" fill="none"/>
+ <text id="text343688" class="syscall-text" x="461.60907" y="136.64224" fill="#003380" font-size="24px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan343686" x="461.60907" y="136.64224">user</tspan><tspan id="tspan362825" x="461.60907" y="166.64224">mode</tspan></text>
+ <text id="text343688-9" class="syscall-text" x="461.34" y="310.61032" fill="#d40000" font-size="24px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan343686-7" x="461.34" y="310.61032">kernel</tspan><tspan id="tspan362825-7" x="461.34" y="340.61032">mode</tspan></text>
+ <rect id="rect457" x="33.156" y="294.68" width="100.74" height="34.804" fill="#ffe6d5" stroke="#000" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect457-1-0-3" x="170.9" y="263.86" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-0" x="170.9" y="270.1" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-4" x="170.9" y="276.35" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-47" x="170.9" y="282.6" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-3-5" x="170.9" y="288.84" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-0-9" x="170.9" y="295.09" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-4-7" x="170.9" y="301.33" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-47-5" x="170.9" y="307.58" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-3-5-3" x="170.9" y="313.82" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-0-9-8" x="170.9" y="320.07" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-4-7-8" x="170.9" y="326.32" width="66.193" height="6.2458" fill="#f00" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-47-5-3" x="170.9" y="332.56" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-3-5-3-1" x="170.9" y="338.81" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-0-9-8-8" x="170.9" y="345.05" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-4-7-8-9" x="170.9" y="351.3" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect457-1-0-47-5-3-6" x="170.9" y="357.55" width="66.193" height="6.2458" fill="#e9afaf" stroke="#500" stroke-linejoin="round" stroke-width=".62362"/>
+ <rect id="rect534" x="180.17" y="24.638" width="112.31" height="18.329" fill="#d5e5ff" stroke="#000080" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0" x="180.17" y="42.791" width="112.31" height="18.329" fill="#d5e5ff" stroke="#000080" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0-9" x="180.17" y="60.944" width="112.31" height="18.329" fill="#d5e5ff" stroke="#000080" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0-9-6" x="180.17" y="79.096" width="112.31" height="18.329" fill="#d5e5ff" stroke="#000080" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0-9-6-3" x="180.17" y="97.249" width="112.31" height="18.329" fill="#d5e5ff" stroke="#000080" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0-9-6-3-3" x="306.14" y="270.01" width="112.31" height="40.335" fill="#ffe680" stroke="#000" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0-9-6-3-3-8" x="306.14" y="309.54" width="112.31" height="17.94" fill="#ffe680" stroke="#000" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0-9-6-3-3-8-8" x="306.14" y="326.87" width="112.31" height="17.94" fill="#ffe680" stroke="#000" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0-9-6-3-3-8-8-8" x="306.14" y="344.81" width="112.31" height="17.94" fill="#ffe680" stroke="#000" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0-9-8" x="180.17" y="164.33" width="112.31" height="18.329" fill="#d7f4d7" stroke="#008000" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0-9-6-5" x="180.17" y="182.69" width="112.31" height="18.329" fill="#d7f4d7" stroke="#008000" stroke-linejoin="round" stroke-width="1.3795"/>
+ <rect id="rect534-0-9-6-3-6" x="180.17" y="200.65" width="112.31" height="18.329" fill="#d7f4d7" stroke="#008000" stroke-linejoin="round" stroke-width="1.3795"/>
+ <text id="text1898" class="syscall-text syscall-code" x="183.183" y="38.667278" xml:space="preserve"><tspan id="tspan1896" x="183.183" y="38.667278">push 3</tspan><tspan id="tspan2030" x="183.183" y="57.000652">call &lt;close&gt;</tspan><tspan id="tspan2257" x="183.183" y="75.33403">add esp, 4</tspan><tspan id="tspan2261" x="183.183" y="93.667404">...</tspan><tspan id="tspan2329" x="183.183" y="112.00078">...</tspan></text>
+ <text id="text1898-0" class="syscall-text syscall-code" x="183.5762" y="178.53699" xml:space="preserve"><tspan id="tspan2028-8" x="183.5762" y="178.53699">mov eax, 10</tspan><tspan id="tspan2030-5" x="183.5762" y="196.87036">int 80</tspan><tspan id="tspan2155" x="183.5762" y="215.20374">ret</tspan></text>
+ <text id="text1898-0-8" class="syscall-text syscall-code" x="309.05627" y="321.77478" xml:space="preserve"><tspan id="tspan7055" x="309.05627" y="321.77478">...</tspan><tspan id="tspan7711" x="309.05627" y="340.10815">...</tspan><tspan id="tspan2155-4" x="309.05627" y="358.44153">reti</tspan></text>
+ <text id="text2937" class="syscall-text" x="48.750359" y="317.7612" font-size="13.333px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan2935" x="48.750359" y="317.7612">Dispatcher</tspan></text>
+ <text id="text2937-3" class="syscall-text" x="311.34274" y="286.03186" font-size="13.333px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan6950" x="311.34274" y="286.03186">Systemroutine</tspan><tspan id="tspan7942" x="311.34274" y="302.69849">für close()</tspan></text>
+ <text id="text7480" class="syscall-text" x="184.03131" y="16.356564" fill="#000080" font-size="13.333px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan7478" x="184.03131" y="16.356564">Anwendung</tspan></text>
+ <text id="text7480-9" class="syscall-text" x="180.35634" y="154.18265" fill="#000080" font-size="13.333px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan7478-7" x="180.35634" y="154.18265" fill="#008000">Library-Funktion close()</tspan></text>
+ <text id="text7480-9-0" class="syscall-text" x="158.72473" y="378.87918" fill="#000080" font-size="10.667px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan7478-7-6" x="158.72473" y="378.87918" fill="#000000" font-size="10.667px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">system call table</tspan></text>
+ <path id="path14322" d="m134.83 313.43c10.301 1.6913 20.548 3.9659 30.466 9.8144" fill="none" marker-end="url(#Arrow2)" stroke="#000080" stroke-width="1.7575"/>
+ <path id="path14322-0" d="m178.12 56.736c-33.09 0.43003-49.103 40.239 0 105.15" fill="none" marker-end="url(#Arrow2-0)" stroke="#000080" stroke-width="1.7575"/>
+ <path id="path14322-0-2" d="m180.43 197.48c-49.796 0.37214-101.14 24.054-99.326 91.137" fill="none" marker-end="url(#Arrow2-0-8)" stroke="#000080" stroke-width="1.7575"/>
+ <path id="path14322-0-4" d="m292.48 213.46c57.496-1.092 90.209-121.46 6.966-147.39" fill="none" marker-end="url(#Arrow2-0-7)" stroke="#000080" stroke-width="1.7575"/>
+ <path id="path14322-0-7" d="m236.09 328.44c17.943-31.706 39.756-47.211 63.69-53.834" fill="none" marker-end="url(#Arrow2-0-2)" stroke="#000080" stroke-width="1.7575"/>
+ <path id="path14322-0-7-3" d="m419.73 359.38c47.131-56.684 20.592-164.25-120.03-155.75" fill="none" marker-end="url(#Arrow2-0-2-8)" stroke="#000080" stroke-width="1.7575"/>
+ <text id="text16643" class="syscall-code" x="163.77348" y="332.11853" font-size="5.3333px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan16641" x="163.77348" y="332.11853" font-size="5.3333px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">10</tspan></text>
+ <g id="g18753" transform="translate(76.496 9.7377)">
+  <circle id="path18320" cx="76.525" cy="37.848" r="9.5237" fill="#ff0"/>
+  <text id="text18516" class="syscall-text" x="73.03788" y="41.735699" font-size="10.667px" font-weight="bold" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan18514" x="73.03788" y="41.735699">1</tspan></text>
+ </g>
+ <g id="g18753-6" transform="translate(89.096 134.45)">
+  <circle id="path18320-8" cx="76.525" cy="37.848" r="9.5237" fill="#ff0"/>
+  <text id="text18516-0" class="syscall-text" x="73.03788" y="41.735699" font-size="10.667px" font-weight="bold" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan18514-2" x="73.03788" y="41.735699">2</tspan></text>
+ </g>
+ <g id="g18753-6-1" transform="translate(12.554 206.09)">
+  <circle id="path18320-8-0" cx="76.525" cy="37.848" r="9.5237" fill="#ff0"/>
+  <text id="text18516-0-5" class="syscall-text" x="73.03788" y="41.735699" font-size="10.667px" font-weight="bold" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan18514-2-1" x="73.03788" y="41.735699">3</tspan></text>
+ </g>
+ <g id="g19225" transform="translate(-41.203 257.45)">
+  <circle id="circle19219" cx="76.525" cy="37.848" r="9.5237" fill="#ff0"/>
+  <text id="text19223" class="syscall-text" x="73.03788" y="41.735699" font-size="10.667px" font-weight="bold" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan19221" x="73.03788" y="41.735699">4</tspan></text>
+ </g>
+ <g id="g19225-1" transform="translate(126.49 290.01)">
+  <circle id="circle19219-0" cx="76.525" cy="37.848" r="9.5237" fill="#ff0"/>
+  <text id="text19223-8" class="syscall-text" x="73.03788" y="41.735699" font-size="10.667px" font-weight="bold" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan19221-5" x="73.03788" y="41.735699">5</tspan></text>
+ </g>
+ <g id="g20292" transform="translate(283.74 227.98)">
+  <circle id="circle20286" cx="76.525" cy="37.848" r="9.5237" fill="#ff0"/>
+  <text id="text20290" class="syscall-text" x="73.03788" y="41.735699" font-size="10.667px" font-weight="bold" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan20288" x="73.03788" y="41.735699">6</tspan></text>
+ </g>
+ <g id="g20292-4" transform="translate(284.71 297.6)">
+  <circle id="circle20286-6" cx="76.525" cy="37.848" r="9.5237" fill="#ff0"/>
+  <text id="text20290-2" class="syscall-text" x="73.03788" y="41.735699" font-size="10.667px" font-weight="bold" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan20288-5" x="73.03788" y="41.735699">7</tspan></text>
+ </g>
+ <g id="g20812" transform="translate(347.37 207.46)">
+  <circle id="circle20806" cx="76.525" cy="37.848" r="9.5237" fill="#ff0"/>
+  <text id="text20810" class="syscall-text" x="73.03788" y="41.735699" font-size="10.667px" font-weight="bold" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan20808" x="73.03788" y="41.735699">8</tspan></text>
+ </g>
+ <g id="g20856" transform="translate(156.32 50.617)">
+  <circle id="circle20850" cx="76.525" cy="37.848" r="9.5237" fill="#ff0"/>
+  <text id="text20854" class="syscall-text" x="73.03788" y="41.735699" font-size="10.667px" font-weight="bold" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan id="tspan20852" x="73.03788" y="41.735699">9</tspan></text>
+ </g>
+</svg>
