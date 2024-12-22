@@ -45,10 +45,22 @@ Das folgende Bild zeigt den prinzipiellen Ablauf eines System Calls am Beispiel 
 
 ## 1.1 System Calls in Linux
 
-Moderne Linux-Versionen kennen über 300 System Calls. Die genaue Anzahl hängt von der CPU-Architektur und der Kernel-Konfiguration ab.
+Moderne Linux-Versionen kennen über 300  (300-499) System Calls. Die genaue Anzahl hängt von der CPU-Architektur und der Kernel-Konfiguration ab.
 
 [syscalls(2)](https://man7.org/linux/man-pages/man2/syscalls.2.html) enthält eine Liste der System Calls von Linux. Sehen Sie die Liste durch. Recherchieren Sie exemplarisch die Funktionalität einiger System Calls, die Sie _noch nicht_ kennen.
 
 Falls Sie sich für die Implementierung von Linux-System Calls interessieren, empfehle ich Ihnen diese [schöne suchbare Tabelle](https://filippo.io/linux-syscall-table/) mit Link zur Implementierung im Quellcode.
 
 
+# 2 Wie werden beim Aufruf eines System Calls dessen Nummer und etwaige Parameter übergeben?
+
+in CPU-Registern
+auf dem CPU-Stack
+
+Beim Aufruf eines System Calls übergibt der Benutzerprozess die Systemaufrufnummer und die zugehörigen Parameter in der Regel über **CPU-Register**. Dies erfolgt durch einen speziellen Mechanismus, der im **System Call Interface** des Kernels definiert ist. Der Prozess übergibt die Systemaufrufnummer und die Parameter, bevor er einen speziellen Instruktionssatz wie `syscall` oder `int 0x80` ausführt (abhängig von der Architektur).
+
+auf dem CPU-Stack**: ** richtig**, aber es ist nicht die Hauptmethode. Der Stack kann verwendet werden, um zusätzliche Argumente zu übergeben, aber die Systemaufrufnummer und die ersten Parameter werden normalerweise in CPU-Registern übergeben.
+
+- **a. in einem Shared Memory Segment**: **Falsch**. Systemaufrufe und deren Parameter werden normalerweise nicht in Shared Memory übergeben, sondern direkt über CPU-Register oder den Stack.
+- **c. auf dem Heap**: **Falsch**. Der Heap ist für dynamische Speicherallokationen vorgesehen und wird nicht für die Übergabe von Systemaufrufparametern verwendet.
+- **e. über fest definierte virtuelle Speicheradressen**: **Falsch**. Systemaufrufe werden nicht über fest definierte virtuelle Adressen übergeben, sondern hauptsächlich über CPU-Register.

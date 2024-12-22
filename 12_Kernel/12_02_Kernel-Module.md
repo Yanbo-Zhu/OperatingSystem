@@ -1,4 +1,10 @@
 
+In der `Kernel -Konfiguration` Wird festgelegt, 0b ein Feature fest im Kernel enthalten Oder als Modul nachladbar ist. 
+Kernel-Module können manuell mit dem Befehl `modprobe` geladen Oder entfernt werden. Die beim Booten automatisch zu ladenden Module werden in` /etc/modules-load.d` definiert.
+
+
+
+
 Wenn Hardware und Einsatzzweck eines Systems vorab genau kennt, kann man einen Kernel dafür spezifisch konfigurieren und bauen: Man aktiviert genau die benötigten Features und lässt alles andere weg.
 
 So ein _customized kernel_ ist optimal auf das System angepasst und liefert gute Performance bei minimaler Größe. Andererseits ist er aber wenig flexibel: wenn sich etwas an der Hardware ändert oder z.B. ein anderer Dateisystemtyp verwendet werden soll, muss der Kernel neu konfiguriert und gebaut werden.

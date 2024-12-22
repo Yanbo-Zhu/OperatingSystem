@@ -7,6 +7,8 @@ Es gibt verschiedene Typen von Netzwerkschnittstellen. Manche davon entsprechen 
 
 Wie gehen hier nur auf die drei wichtigsten Interface-Typen ein:
 - ==**Loopback Interface** (Name `lo`)== : diese auf jedem Unix-System vorhandene virtuelle Schnittstelle erlaubt nur Verbindungen zwischen Prozessen des lokalen Rechners und ist von der Außenwelt isoliert. Sie hat die speziellen IP-Adressen `127.0.0.1` und `::1`  (IPv6 格式) und den symbolischen Hostnamen `localhost`.
+    - ==Jeder Prozess auf dem lokalen Rechner. kann eine Netzwerkverbindung über das Loopback-Interface aufbauen==
+    - falsch: Nur privilegierte Prozesse (root) auf dem lokalen Rechner
 - **Ethernet Interface** (Name meist `en*` oder `eth*`): repräsentiert einen Ethernet-Adapter.
 - **WLAN Interface** (Name meist `wl*`): repräsentiert einen WLAN-Adapter.
 

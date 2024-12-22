@@ -64,3 +64,22 @@ Antwort
 Es gibt auch unbenannte (_unnamed_) Unix Domain Sockets, die nicht persistent im Dateisystem gespeichert werden. Sie werden in der Praxis seltener verwendet. Der System Call [socketpair()](https://man7.org/linux/man-pages/man2/socketpair.2.html) erzeugt ein Paar verbundener unbenannter Sockets, die dann z.B. an Kindprozesse weitergegeben werden können.
 
 Linux kennt zusätzlich sogenannte **abstrakte Sockets**. Diese Sockets existieren außerhalb des Dateisystems und haben eindeutige Namen aus einem eigenen Namensraum.
+
+
+# 5 
+
+Die korrekten Aussagen zu **Unix Domain Sockets** sind:
+
+- **a. Es gibt keine Portnummern.**
+    - **Richtig.** Im Gegensatz zu Netzwerk-Sockets, die Portnummern benötigen, verwenden Unix Domain Sockets Dateipfade als Adressen. Es gibt keine Portnummern wie bei TCP/IP-Sockets.
+- **c. Man kann Unix Domain Sockets erzeugen, die nicht im Dateisystem auftauchen.**
+    - **Richtig.** Unix Domain Sockets können als **anonyme Sockets** ohne eine sichtbare Datei im Dateisystem erstellt werden, indem man sie direkt mit der `socket()`-Funktion verwendet. Ein Socket muss nicht unbedingt eine Datei im Dateisystem haben (z. B. mit der `AF_UNIX`-Adressfamilie).
+
+
+Die falschen Aussagen:
+- **b. Sie können auch zur Kommunikation über das Internet verwendet werden.**
+    - **Falsch.** Unix Domain Sockets sind für die Kommunikation innerhalb eines einzelnen Rechners gedacht. Sie sind nicht für die Kommunikation über das Internet oder zwischen verschiedenen Hosts gedacht, da sie nur über das lokale Dateisystem adressiert werden.
+- **d. Der Verbindungsaufbau erfolgt immer ohne `connect()`.**
+    - **Falsch.** Der Verbindungsaufbau erfolgt auch bei Unix Domain Sockets über `connect()`. Auf der Serverseite wird `bind()` verwendet, um einen Socket mit einer Datei im Dateisystem zu verbinden, während der Client die `connect()`-Funktion verwendet, um eine Verbindung zum Server aufzubauen.
+- **e. Sie sind immer als Datei im Dateisystem sichtbar.**
+    - **Falsch.** Unix Domain Sockets können als **anonyme Sockets** ohne eine Datei im Dateisystem existieren, wie bereits bei Antwort **c** erklärt. Aber sie können auch als Datei im Dateisystem sichtbar sein, wenn sie explizit an einen Dateipfad gebunden werden.

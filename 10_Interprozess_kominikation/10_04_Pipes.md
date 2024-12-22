@@ -39,8 +39,30 @@ Sobald alle file descriptors an beiden Enden der Pipe geschlossen sind (also sp�
 
 Lesen Sie [pipe(7)](https://man7.org/linux/man-pages/man7/pipe.7.html) und [pipe(2)](https://man7.org/linux/man-pages/man2/pipe.2.html).
 
+# 3 Welche Prozesse können über eine unbenannte Pipe miteinander kommunizieren
 
-# 3 Ein kleines Beispiel
+Die **unbenannte Pipe** (auch als **anonyme Pipe** bezeichnet) ermöglicht die Kommunikation zwischen Prozessen, die direkt miteinander verbunden sind, typischerweise zwischen einem **Elternprozess** und seinen **Kindprozessen**. Sie ist eine Form der Interprozesskommunikation, die keine Benennung im Dateisystem benötigt, sondern in der Regel innerhalb des gleichen Programms oder der gleichen Anwendung verwendet wird.
+
+
+**a. Der Prozess, der die Pipe erzeugt hat**
+- **Richtig**: Der Prozess, der die Pipe erzeugt hat, kann auf die Pipe zugreifen und mit anderen Prozessen, insbesondere seinen Nachkommen, kommunizieren.
+
+**b. Nachkommen des Prozesses, der die Pipe erzeugt hat**
+- **Richtig**: In der Regel können nur der **Elternprozess** und seine **Kindprozesse** über eine unbenannte Pipe kommunizieren, da diese Pipe nur zwischen Prozessen besteht, die eine direkte **Eltern-Kind-Beziehung** haben.
+
+**c. Alle Prozesse des Users, unter dessen UID die Pipe erzeugt wurde**
+- **Falsch**: Unbenannte Pipes sind nicht systemweit zugänglich und sind auf den Prozess und seine Nachkommen beschränkt. Sie sind **nicht für alle Prozesse** des Benutzers zugänglich.
+
+**d. Alle Prozesse, die passende Zugriffsrechte auf die Pipe-Datei haben**
+- **Falsch**: Dies trifft auf **benannte Pipes** zu, die eine Datei im Dateisystem repräsentieren und für andere Prozesse zugänglich sein können. Unbenannte Pipes sind jedoch nicht als Dateien im Dateisystem sichtbar, und der Zugriff darauf ist nur innerhalb der **Eltern-Kind-Prozess-Beziehung** möglich.
+
+
+Die korrekten Antworten sind:
+
+- **a. Der Prozess, der die Pipe erzeugt hat**
+- **b. Nachkommen des Prozesses, der die Pipe erzeugt hat**
+
+# 4 Ein kleines Beispiel
 
 Hier ist ein minimales Beispiel zur Verwendung einer Pipe (der Einfachheit halber ohne Fehlerbehandlung):
 
@@ -70,7 +92,7 @@ int main() {
 }
 ```
 
-# 4 Ubung 
+# 5 Ubung 
 
 
 Schreiben Sie ein Programm pipe.c, das zwei Programme in jeweils einem Kindprozess startet und über eine Pipe den Output des ersten Programms mit dem Input des zweiten verknüpft. Zu beiden Programmen können Argumente angegeben werden, die Trennung erfolgt mit '|' (in Anführungszeichen, damit die Shell das nicht als Pipe interpretiert). Beispiel: `./pipe ls -la '|' head -n 5 `hat den gleichen Effekt wie in der Shell` ls -la | head -n 5`.
@@ -89,7 +111,7 @@ execvp(...);
 ```
 
 
-## 4.1 答案
+## 5.1 答案
 
 
 
@@ -207,7 +229,7 @@ int main(int argc, char *argv[]) {
 ```
 
 
-## 4.2 execvp
+## 5.2 execvp
 
 
 Die Funktion execvp ist eine der Funktionen der exec-Familie, die dazu dient, ein neues Programm im aktuellen Prozess auszuführen. Sobald execvp erfolgreich ausgeführt wurde, ersetzt das neue Programm den aktuellen Prozess. Der ursprüngliche Code nach execvp wird nicht mehr ausgeführt.
@@ -228,7 +250,7 @@ Rückgabewert:
 - Bei Fehler wird `-1` zurückgegeben, und `errno` wird gesetzt, um den Fehler zu beschreiben.
 
 
-### 4.2.1 Beispiel 
+### 5.2.1 Beispiel 
 
 ```c
 #include <stdio.h>
@@ -256,13 +278,13 @@ Erklärung des Beispiels:
 - Wenn `execvp` fehlschlägt (z. B. wenn `ls` nicht gefunden wird), gibt das Programm einen Fehler aus und beendet sich.
 
 
-### 4.2.2 Vorteile von `execvp`
+### 5.2.2 Vorteile von `execvp`
 
 - Automatische Suche nach dem Programm in den Verzeichnissen, die in der `PATH`-Umgebungsvariablen definiert sind.
 - Geeignet für dynamische und flexible Programmstarts, z. B. für Shell-ähnliche Programme.
 
 
-### 4.2.3 Zusammenhang mit Pipes und Kindprozessen
+### 5.2.3 Zusammenhang mit Pipes und Kindprozessen
 
 - In Kombination mit `fork` wird `execvp` häufig verwendet, um in einem Kindprozess ein anderes Programm zu starten, während der Elternprozess weiterläuft.
 - Beispiel für `fork` und `execvp`

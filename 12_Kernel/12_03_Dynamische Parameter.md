@@ -1,4 +1,8 @@
 
+Laufzeit-Parameter des Kernels kann man über` /proc/sys` abfragen und ändern.
+Den Inhalt der Kernel Command Line konfiguriert man normalerweise in der `[Bootloader]`-Konfigurationsdatei.
+
+
 Ein Unix-Kernel kann nicht nur statisch vor dem Bauen konfiguriert werden. Es gibt auch Parameter, die dynamisch beim Start des Kernels oder später zur Laufzeit gesetzt werden können. Wir sehen uns exemplarisch die Möglichkeiten in Linux an.
 
 # 1 Kernel Command Line

@@ -3,8 +3,16 @@
 
 Ein **Socket** ist ein logischer Endpunkt zur Netzwerk-Kommunikation eines Prozesses. Die Kommunikation erfolgt jeweils zwischen zwei Sockets.
 
+# 1 Verwendung von POSIX Sockets  
 
-# 1 Socket-Typen
+Die Adress-Familie eines POSIX Sockets wird beim Aufruf von [socket()] festgelegt.
+
+[bind()] ordnet dem Socket eine lokale Adresse zu, dies ist [für TCP‑ und UDP] - [Server] erforderlich.
+
+Mit [accept()] blockiert der Server, bis ein Client eine [TCP]-Verbindung anfordert.
+
+Zum Senden von Daten über einen Socket kann man [send() oder write()] verwenden.
+# 2 Socket-Typen
 
 POSIX definiert 3 verschiedene **Socket-Typen**, die unterschiedliche Kommunikationsmöglichkeiten bereitstellen:
 - `SOCK_STREAM` entspricht einer TCP-Verbindung: bietet nach Verbindungsaufbau einen zuverlässigen bidirektionalen Bytestrom.
@@ -12,7 +20,7 @@ POSIX definiert 3 verschiedene **Socket-Typen**, die unterschiedliche Kommunikat
 - `SOCK_SEQPACKET` entspricht dem SCTP-Protokoll: ähnlich wie `SOCK_STREAM`, aber statt einem Bytestrom werden einzelne Nachrichten begrenzter Länge (_records_) jeweils komplett gesendet und empfangen.
     - SCTP（Stream Control Transmission Protocol），即**流媒体控制传输协议**，是一种可靠的基于无连接数据包网络如IP网络之上传输协议。 他被设计用来在IP网络上传输PSTN在窄带信令消息，同时也能支持宽带信令消息的传输
 
-# 2 Socket-Adresse
+# 3 Socket-Adresse
 
 Bevor man über einen Socket kommunizieren kann, muss man ihm eine **Socket-Adresse** zuweisen. POSIX definiert 3 **Adress-Familien**, die jeweils angeben, wie ein Socket adressiert wird und über welches Protokoll kommuniziert wird.
 
@@ -23,7 +31,7 @@ Bevor man über einen Socket kommunizieren kann, muss man ihm eine **Socket-Adre
 |`AF_UNIX`|[Unix Domain Sockets](https://moodle.oncampus.de/modules/ir866/onmod/net/unix-sockets.html)|Pfad im Dateisystem (→ nächster Abschnitt)|
 
 
-# 3 API-Funktionen
+# 4 API-Funktionen
 
 Das Socket-API besteht aus mehreren System Calls, dazu gehören unter anderem:
 
@@ -41,7 +49,7 @@ Das Socket-API besteht aus mehreren System Calls, dazu gehören unter anderem:
 Details zu den Funktionen finden Sie bei Bedarf in den entsprechenden Man Pages
 
 
-# 4 TCP-Kommunikation
+# 5 TCP-Kommunikation
 
 Für eine erfolgreiche Kommunikation müssen beide Seiten (Client und Server) die obigen System Calls in der korrekten Abfolge verwenden, die in der Grafik für TCP schematisch dargestellt ist:
 
@@ -55,14 +63,14 @@ Sockets werden über spezielle _file descriptors_ identifiziert. Man kann wie be
 Ein Socket hat einen internen _send buffer_ für zu sendende und einen _receive buffer_ für empfangene Daten  (socket 有两个 buffer ). Im Unterschied zu normalen Datei-Operationen _blockieren_ Schreiben und Lesen auf einem Socket, wenn der entsprechende Puffer voll bzw. leer ist.
 
 
-# 5 UDP-Kommunikation
+# 6 UDP-Kommunikation
 
 Die Kommunikation über UDP ist programmtechnisch einfacher, da hier keine Verbindung aufgebaut werden muss:
 
 UDP-Client und -Server mit Sockets
 ![](images/Pasted%20image%2020241220184606.png)
 
-# 6 Socket-Informationen  (command ss )
+# 7 Socket-Informationen  (command ss )
 
 Das Linux-Kommando `ss` (_socket statistics_) liefert detaillierte Informationen zu Sockets und aktiven Verbindungen im System. Es sollte mit root-Rechten verwendet werden, ansonsten erhalten Sie nur eingeschränkte Informationen.
 

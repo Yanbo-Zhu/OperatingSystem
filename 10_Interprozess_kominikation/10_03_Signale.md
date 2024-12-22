@@ -86,3 +86,15 @@ Einige Signale werden direkt vom Kernel gesendet oder aus Hardware-Events generi
 
 Das Kommando kill -L gibt alle in Ubuntu verfügbaren Signale aus.
 
+![](images/Pasted%20image%2020241222010755.png)
+
+
+- SIGINT kann mit Ctrl-C von der Tastatur gesendet werden.
+- SIGKILL Wird mit kill -9 gesendet.
+- SIGSTOP kann nicht ignoriert werden.
+- SIGHUP Wird oft verwendet, um Service-Prozesse (daemons) ihre Konfiguration neu laden zu lassen
+- SIGSEGV Wird ausgelöst, wenn ein Prozess auf einen ungültige Oder für ihn nicht erlaubte Speicheradresse zugreift.
+
+
+
+
