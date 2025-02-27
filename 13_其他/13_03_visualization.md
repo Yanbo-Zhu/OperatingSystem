@@ -1,6 +1,5 @@
 
 
-
 # 1 Virtualisierung in der IT
 
 verschiedene unabhängige Begriffsverwendungen
