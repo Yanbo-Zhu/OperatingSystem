@@ -22,3 +22,18 @@ In den _sleep_ Zuständen S und D ist ein Prozess blockiert und wartet auf ein e
 
 Prozesse im Zustand D (_uninterruptible sleep_) dürfen vor Eintreten des Ereignisses nicht unterbrochen werden. Typischerweise bedeutet das ein Warten auf eine I/O-Operation (D = _disk wait_), deren Abbruch zu einem inkonsistenten Systemzustand und zu Datenverlusten führen kann.
 
+# 2 
+
+Implementierung von Prozessen in BS durch Datenstruktur Prozesskontrollblock
+(Process Control Block, PCB)
+• PCB = verwaltungstechnischer Repräsentant des Prozesses
+• Elemente eines PCB (unter anderem):
+➢ Prozessidentifikation (häufig: PID, Prozessnummer)
+➢ Identifikation des Besitzers (z.B. Nutzerkennung)
+➢ Bereich zur Sicherung der aktuellen Registerwerte, wenn Prozess nicht im Zustand
+Laufend
+➢ Zustandsvariable (Prozesszustand): Bereit / Laufend / …
+➢ Informationen über zugeteilte Betriebsmittel
+➢ Konfiguration des virtuellen Adressraums
+➢ Verweise auf Eltern- bzw. Kindprozesse
+
