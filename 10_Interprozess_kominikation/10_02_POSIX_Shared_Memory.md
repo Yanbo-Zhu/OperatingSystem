@@ -1,0 +1,48 @@
+
+_Shared memory_ ist gemeinsam genutzter Speicher (RAM), der vom Betriebssystem verwaltet und in den virtuellen Adressraum der beteiligten Prozesse abgebildet wird.
+
+Das **POSIX Shared Memory** API besteht aus den Funktionen `shm_open()` und `shm_unlink()`.
+
+`shm_open()` öffnet ein _shared memory_-Objekt und gibt einen _file descriptor_ darauf zurück, über den es mit `mmap()` in den virtuellen Adressraum des aktuellen Prozesses abgebildet (built) werden kann. Die Größe eines neu angelegten Objekts muss zuerst mit dem System Call `ftruncate()` festgelegt werden, bevor man es `mmap`-en kann.
+
+Ein _shared memory_-Objekt wird über einen mit `/` beginnenden Namen identifiziert und ist systemweit sichtbar. Es kann zum Lesen und/oder Schreiben geöffnet werden. Der Zugriff wird wie bei Dateien nach Benutzer- und Gruppen-ID über eine Zugriffsrechte-Maske (_mode_) kontrolliert. _Owner_ ist dabei der User, unter dessen ID das Objekt neu angelegt wurde.
+
+_Shared memory_-Objekte sind persistent: sie existieren im Kernel, bis sie explizit gelöscht werden oder das System neu bootet. `shm_unlink()` löscht ein _shared memory_-Objekt und gibt den Speicher frei, sobald es von keinem Prozess mehr genutzt wird.
+
+> Lesen Sie die _man pages_ [shm_overview(7)](https://man7.org/linux/man-pages/man7/shm_overview.7.html), [shm_open(3)](https://man7.org/linux/man-pages/man3/shm_open.3.html), [truncate(2)](https://man7.org/linux/man-pages/man2/truncate.2.html) und [mmap(2)](https://man7.org/linux/man-pages/man2/mmap.2.html).
+
+
+---
+
+Shared Memory ist sehr effizient: Da `mmap()` den geteilten Speicher über die Seitentabelle des Prozesses direkt in dessen virtuellen Adressraum integriert, ist der Zugriff darauf genauso schnell wie jeder andere Speicherzugriff. Der einzige "Overhead" besteht in der erforderlichen Synchronisation.
+
+> POSIX Shared Memory beinhaltet keine Synchronisation. Der Zugriff darauf muss immer explizit synchronisiert werden, z.B. mit Semaphoren oder Mutexen.
+
+困难: 
+Eine praktische Herausforderung bei der Verwendung von _shared memory_ ist, dass alle beteiligten Prozesse den Namen des Objekts kennen müssen. Das ist schwierig, wenn es gleichzeitig mehrere Instanzen der betreffenden Programme geben kann, die mit separaten Objekten arbeiten sollen. Man muss dann den Namen entweder per Konvention festlegen oder zur Laufzeit über andere Mechanismen verteilen.
+
+# 1 Funktionen, um ein _neues_ Shared Memory Objekt zu erzeugen
+
+Welche 3 Funktionen muss ein Programm nacheinander aufrufen, um ein _neues_ Shared Memory Objekt zu erzeugen und für sich nutzbar zu machen? Geben Sie die korrekte Reihenfolge an.
+
+Um ein **neues Shared Memory Objekt** zu erzeugen und für sich nutzbar zu machen, muss ein Programm drei Funktionen in der richtigen Reihenfolge aufrufen. Diese Funktionen gehören zum POSIX Shared Memory-API und ermöglichen es einem Programm, ein Shared Memory Objekt zu erstellen und darauf zuzugreifen.
+
+Die korrekte Reihenfolge der Funktionen:
+
+1. **`shm_open()`**
+    
+    - Diese Funktion wird verwendet, um ein **Shared Memory Objekt zu öffnen**. Wenn das Objekt noch nicht existiert, kann es mit den entsprechenden Flags erstellt werden.
+    - Sie wird verwendet, um das Objekt entweder zu erstellen oder zu öffnen, falls es bereits existiert.
+2. **`ftruncate()`**
+    
+    - Nachdem das Shared Memory Objekt mit `shm_open()` geöffnet wurde, wird diese Funktion verwendet, um die **Größe des Shared Memory Objekts festzulegen**.
+    - Sie stellt sicher, dass der Shared Memory-Bereich die richtige Größe hat.
+3. **`mmap()`**
+    
+    - Mit `mmap()` wird das Shared Memory Objekt in den **Adressraum des Prozesses gemappt**, sodass der Prozess auf die im Shared Memory gespeicherten Daten zugreifen kann.
+
+
+
+1. **`shm_open()`** – Erzeugt oder öffnet ein Shared Memory Objekt.
+2. **`ftruncate()`** – Setzt die Größe des Shared Memory Objekts.
+3. **`mmap()`** – Mappt das Shared Memory Objekt in den Adressraum des Prozesses.
